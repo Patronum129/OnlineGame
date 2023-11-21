@@ -1,0 +1,1149 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.10f1 (ff3792e53c62) revision 16725906'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.18363) 64bit Professional' Language: 'zh' Physical Memory: 32699 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\Unity\Editor\2022.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/Github/OnlineGame/OnlineGame
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+60198
+Successfully changed project path to: D:/Github/OnlineGame/OnlineGame
+D:/Github/OnlineGame/OnlineGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [66356] Host "[IP] 192.168.1.137 [Port] 0 [Flags] 2 [Guid] 3281489985 [EditorId] 3281489985 [Version] 1048832 [Id] WindowsEditor(7,WIN-IKR7BUL510E) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [66356] Host "[IP] 192.168.1.137 [Port] 0 [Flags] 2 [Guid] 3281489985 [EditorId] 3281489985 [Version] 1048832 [Id] WindowsEditor(7,WIN-IKR7BUL510E) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 8.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.10f1 (ff3792e53c62)
+[Subsystems] Discovering subsystems at path E:/Unity/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/OnlineGame/OnlineGame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
+    Vendor:   NVIDIA
+    VRAM:     8019 MB
+    Driver:   31.0.15.4617
+Initialize mono
+Mono path[0] = 'E:/Unity/Editor/2022.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Unity/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003578 seconds.
+- Loaded All Assemblies, in  0.316 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.227 seconds
+Domain Reload Profiling: 542ms
+	BeginReloadAssembly (113ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (117ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (115ms)
+			TypeCache.Refresh (114ms)
+				TypeCache.ScanAssembly (103ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (227ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (176ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (115ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.541 seconds
+Refreshing native plugins compatible for Editor in 2.37 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.504 seconds
+Domain Reload Profiling: 1044ms
+	BeginReloadAssembly (150ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (315ms)
+		LoadAssemblies (260ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (147ms)
+			TypeCache.Refresh (125ms)
+				TypeCache.ScanAssembly (112ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (504ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (374ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 2.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4009 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (244.6 KB). Loaded Objects now: 4466.
+Memory consumption went from 141.7 MB to 141.5 MB.
+Total: 3.300100 ms (FindLiveObjects: 0.325000 ms CreateObjectMapping: 0.106200 ms MarkObjects: 2.665500 ms  DeleteObjects: 0.202500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.444 seconds
+Refreshing native plugins compatible for Editor in 2.97 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.847 seconds
+Domain Reload Profiling: 1290ms
+	BeginReloadAssembly (183ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (189ms)
+		LoadAssemblies (287ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (847ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (424ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (311ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 2.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4004 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (217.0 KB). Loaded Objects now: 4471.
+Memory consumption went from 139.6 MB to 139.4 MB.
+Total: 4.534700 ms (FindLiveObjects: 0.420700 ms CreateObjectMapping: 0.118600 ms MarkObjects: 3.764000 ms  DeleteObjects: 0.230500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.397 seconds
+Refreshing native plugins compatible for Editor in 2.24 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.783 seconds
+Domain Reload Profiling: 1179ms
+	BeginReloadAssembly (165ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (168ms)
+		LoadAssemblies (248ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (783ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (387ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 3.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4004 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (216.9 KB). Loaded Objects now: 4475.
+Memory consumption went from 139.6 MB to 139.4 MB.
+Total: 3.825400 ms (FindLiveObjects: 0.473200 ms CreateObjectMapping: 0.187200 ms MarkObjects: 2.889100 ms  DeleteObjects: 0.274900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 101838.246840 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.102256 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png
+  artifactKey: Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png using Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.262874 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.011116 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010739 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009283 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009129 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009359 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009317 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009199 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010245 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009107 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010112 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009084 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010130 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.011433 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010387 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009768 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010010 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010394 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png
+  artifactKey: Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png using Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.160114 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009018 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png
+  artifactKey: Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png using Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.159969 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.011020 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.011048 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009709 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010083 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009185 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009295 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009672 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010293 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010219 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009997 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010592 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009510 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010481 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010417 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010887 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009730 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010316 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png
+  artifactKey: Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png using Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.171072 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_02.png
+  artifactKey: Guid(b43e2cfee85e46ac949918af14578a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_02.png using Guid(b43e2cfee85e46ac949918af14578a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010675 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_02.png.meta in SourceAssetDB has modification time of '2023-11-05T18:36:33Z' while content on disk has modification time of '2023-11-21T00:30:12.0514399Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_02.png.meta in SourceAssetDB has modification time of '2023-11-05T18:36:33Z' while content on disk has modification time of '2023-11-21T00:30:12.0514399Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010267 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009968 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009810 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009466 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008668 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010426 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008967 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009415 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009189 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010772 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010287 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.011474 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009678 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009309 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009643 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009872 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_02.png
+  artifactKey: Guid(b43e2cfee85e46ac949918af14578a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_02.png using Guid(b43e2cfee85e46ac949918af14578a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010266 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_02.png.meta in SourceAssetDB has modification time of '2023-11-05T18:36:33Z' while content on disk has modification time of '2023-11-21T00:30:12.0514399Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_02.png.meta in SourceAssetDB has modification time of '2023-11-05T18:36:33Z' while content on disk has modification time of '2023-11-21T00:30:12.0514399Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png
+  artifactKey: Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Tilemap.png using Guid(83af4c0dcd9f45e0b1bae337e1573b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.173446 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/tilemap.png.meta in SourceAssetDB has modification time of '2023-11-05T18:24:29Z' while content on disk has modification time of '2023-11-21T00:30:19.9778725Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009239 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009439 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009306 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009100 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.011616 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010180 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009001 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009871 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009554 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009220 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010794 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009506 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010809 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.010043 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png
+  artifactKey: Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_01.png using Guid(f818b71b3300492c8d6b45218ff3680f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009800 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_01.png.meta in SourceAssetDB has modification time of '2023-11-05T18:53:10Z' while content on disk has modification time of '2023-11-21T00:30:16.3216772Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png
+  artifactKey: Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_03.png using Guid(e6ba455139ce4fd389d484b238670455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008954 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_03.png.meta in SourceAssetDB has modification time of '2023-11-05T18:48:47Z' while content on disk has modification time of '2023-11-21T00:30:19.2878771Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_02.png
+  artifactKey: Guid(b43e2cfee85e46ac949918af14578a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Comic Battle Royale/2D Character - Astronaut/Variant A/Sprites/Tilemap/Deco_02.png using Guid(b43e2cfee85e46ac949918af14578a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.009976 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_02.png.meta in SourceAssetDB has modification time of '2023-11-05T18:36:33Z' while content on disk has modification time of '2023-11-21T00:30:12.0514399Z'
+  ERROR: Build asset version error: assets/comic battle royale/2d character - astronaut/variant a/sprites/tilemap/deco_02.png.meta in SourceAssetDB has modification time of '2023-11-05T18:36:33Z' while content on disk has modification time of '2023-11-21T00:30:12.0514399Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 由于线程退出或应用程序请求，已中止 I/O 操作。
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
