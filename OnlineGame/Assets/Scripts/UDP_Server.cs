@@ -182,7 +182,7 @@ public class UDP_Server : MonoBehaviour
 
                 string receivedMessage = Encoding.ASCII.GetString(buffer, 0, bytesRead);
 
-                if (receivedMessage == "JOINUDGAME")
+                if (receivedMessage == "JOINED ROOM")
                 {
                     IPEndPoint clientIpEndpoint = clientEndpoint as IPEndPoint;
 
@@ -193,14 +193,14 @@ public class UDP_Server : MonoBehaviour
                     continue;
                 }
 
-                if (receivedMessage == "LEAVEUDGAME")
+                if (receivedMessage == "LEFT GAME")
                 {
                     IPEndPoint clientIpEndpoint = clientEndpoint as IPEndPoint;
 
                     if (_clienEndPoints.Contains(clientIpEndpoint))
                         _clienEndPoints.Remove(clientIpEndpoint);
 
-                    UnityEngine.Debug.Log("Some one leave the game: " + clientEndpoint);
+                    UnityEngine.Debug.Log("Someone leave the game: " + clientEndpoint);
                     continue;
                 }
 
