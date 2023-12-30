@@ -1,6 +1,12 @@
 using System;
+using System.Collections.Generic;
+using System.Net;
 using System.Text;
 using Client;
+using Model;
+using Net.Actions;
+using Net.Datas;
+using Server;
 using UnityEngine;
 using Utilitys;
 
@@ -11,7 +17,13 @@ namespace Helper
         private byte[] data = new byte[4096];
 
         private int msgLength = 0;
-        
+
+        protected override void Awake()
+        {
+            base.Awake();
+            DontDestroyOnLoad(gameObject);
+        }
+
         public void CopyToData(byte[] buffer, int length)
         {
             Array.Copy(buffer,0,data,msgLength,length);
@@ -21,7 +33,7 @@ namespace Helper
             Handle();
         }
         
-        public void Handle()
+        private void Handle()
         {
             //包体大小（4） 协议ID（4） 包体（byte[])
             if(msgLength >= 8)
@@ -56,17 +68,116 @@ namespace Helper
                     }
 
                     msgLength -= _length;
-                    Debug.Log($"收到服务端请求：{id}");
+                    Debug.Log($"收到请求：{id}");
 
                     switch(id)
                     {
+                        case 1001:
+                            ChatMsgHandle(body);
+                            return;
+                        case 1002:
+                            ReadyMsgHandle(body);
+                            return;
+                        case 1003:
+                            JoinMsgHandle(body);
+                            return;
+                        case 1004:
+                            JoinRpcMsgHandle(body);
+                            return;
                         
                     }
                 }
             }
         }
+
+        #region ChatMsg
+
+        /// <summary>
+        /// 发送聊天信息给服务器
+        /// </summary>
+        public void SendChatMsg(string name, string chat, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            ChatMsg msg = new ChatMsg();
+
+            msg.playerName = name;
+            msg.msg = chat;
+
+            var str = JsonHelper.ToJson(msg);
+            
+            Send(1001,str,isServer,isRpc,ipEndPoint);
+        }
         
-        public void SendToServer(int id , string str)
+        /// <summary>
+        /// 处理聊天转发请求
+        /// </summary>
+        private void ChatMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+            
+            ChatMsg msg = JsonHelper.ToObject<ChatMsg>(str);
+            
+            NetActions.ChatHandle?.Invoke(msg);
+
+            if (GameModel.IsServer)
+            {
+                SendChatMsg(msg.playerName, msg.msg, true);
+            }
+        }
+
+        #endregion
+
+        #region ReadyMsg
+        
+        public void SendReadyMsg(string _name, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            Send(1002,_name,isServer,isRpc,ipEndPoint);
+        }
+        
+        private void ReadyMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+
+            NetActions.ReadyHandle?.Invoke(str);
+            
+            if (GameModel.IsServer)
+            {
+                SendReadyMsg(str, true);
+            }
+        }
+
+        #endregion
+        
+        #region JoinGameMsg
+        
+        public void SendJoinMsg(string name, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            Send(1003,name,isServer,isRpc,ipEndPoint);
+        }
+        
+        private void JoinMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+
+            NetActions.JoinHandle?.Invoke(str);
+        }
+
+        public void SendJoinRpcMsg(List<string> names)
+        {
+            var str = JsonHelper.ToJson(names);
+            Send(1004,str,true,true,null);
+        }
+        
+        private void JoinRpcMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+
+            var names = JsonHelper.ToObject<List<string>>(str);
+
+            NetActions.RoomPlayerUIHandle?.Invoke(names);
+        }
+        #endregion
+        
+        private void Send(int id, string str, bool isServer, bool isRpc, IPEndPoint ipEndPoint)
         {
             //转换成byte[]
             var body = Encoding.UTF8.GetBytes(str);
@@ -76,13 +187,27 @@ namespace Helper
 
             int size = body.Length;
             var _size = BitConverter.GetBytes(size);
-            var _id=BitConverter.GetBytes(id);
+            var _id = BitConverter.GetBytes(id);
 
             Array.Copy(_size, 0, send_buff, 0, 4);
             Array.Copy(_id, 0, send_buff, 4, 4);
-            Array.Copy(body,0, send_buff, 8, body.Length);
+            Array.Copy(body, 0, send_buff, 8, body.Length);
 
-            ClientManager.Singleton.Send(send_buff);
+            if (isServer)
+            {
+                if (isRpc)
+                {
+                    ServerManager.Singleton.SendRpc(send_buff);
+                }
+                else
+                {
+                    ServerManager.Singleton.SendTarget(send_buff,ipEndPoint);
+                }
+            }
+            else
+            {
+                ClientManager.Singleton.Send(send_buff);
+            }
         }
     }
 }

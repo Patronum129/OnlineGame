@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
+using Helper;
 using UnityEngine;
 
 namespace Server
@@ -50,10 +51,11 @@ namespace Server
                 if (!m_Clients.Contains(client))
                 {
                     m_Clients.Add(client);
+                    Debug.Log("客户端已连接：" + client);
                 }
 
-                Debug.Log("客户端已连接：" + client);
-
+                MessageManager.Singleton.CopyToData(result.Buffer,result.Buffer.Length);
+                
                 Accept();
             }
             catch(Exception e)
