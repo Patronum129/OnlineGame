@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.Net;
+using Model;
 using Utilitys;
 
 namespace Server
@@ -30,6 +32,12 @@ namespace Server
         public void SendTarget(byte[] buff,IPEndPoint ipEndPoint)
         {
             m_UDPServer.SendTarget(buff,ipEndPoint);
+        }
+
+        public void Close()
+        {
+            m_UDPServer.Close();
+            GameModel.PlayerList.Clear();
         }
     }
 }

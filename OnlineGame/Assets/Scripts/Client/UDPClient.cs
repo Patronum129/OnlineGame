@@ -62,5 +62,11 @@ namespace Client
                 m_UDPClient.Close();
             }
         }
+
+        public void Close()
+        {
+            Ip = "";
+            m_UDPClient.Close();
+        }
     }
 }

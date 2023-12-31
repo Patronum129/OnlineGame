@@ -84,5 +84,11 @@ namespace Server
                 await m_UdpListener.SendAsync(data, data.Length, client);
             }
         }
+
+        public void Close()
+        {
+            m_UdpListener.Close();//停止监听客户端的连接
+            m_Clients.Clear();
+        }
     }
 }

@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using Helper;
 using Model;
+using Net.Actions;
 using Net.NetComponents;
 using UnityEngine;
 
@@ -23,6 +25,8 @@ namespace GamePlay
         [HideInInspector] public Vector2 Dir;
 
         private NetAnimator m_NetAnimator;
+
+        private bool m_IsDie;
         
         private void Awake()
         {
@@ -33,6 +37,8 @@ namespace GamePlay
             m_WeaponAnimator = transform.Find("weapon_sword_side").GetComponent<Animator>();
             
             m_WeaponCollider = transform.Find("weapon_sword_side").GetComponent<BoxCollider2D>();
+
+            NetActions.DieHandle += DieHandle;
         }
 
         public void Init(int i)
@@ -42,7 +48,8 @@ namespace GamePlay
             IsLocalPlayer = MyName == GameModel.MyName;
             
             GetComponent<NetTransform>().Init();
-            GetComponent<NetAnimator>().Init();
+            m_NetAnimator = GetComponent<NetAnimator>();
+            m_NetAnimator.Init();
         }
 
         private void Update()
@@ -123,7 +130,32 @@ namespace GamePlay
 
         public void Die()
         {
-            
+            if (GameModel.IsServer)
+            {
+                MessageManager.Singleton.SendDieMsg(MyName,true);
+
+                DieHandle(MyName);
+            }
+            else
+            {
+                MessageManager.Singleton.SendDieMsg(MyName);
+            }
+        }
+
+        private void DieHandle(string _name)
+        {
+            if (_name == MyName)
+            {
+                if (m_IsDie) return;
+
+                m_IsDie = true;
+                
+                GameManager.Singleton.DieSum++;
+                
+                GameManager.Singleton.CheckWin();
+
+                Destroy(this.gameObject);
+            }
         }
     }
 }

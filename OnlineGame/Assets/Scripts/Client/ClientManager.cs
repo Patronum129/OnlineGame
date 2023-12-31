@@ -1,3 +1,4 @@
+using Model;
 using UnityEngine;
 using Utilitys;
 
@@ -32,6 +33,12 @@ namespace Client
             Debug.Log(m_UDPClient); 
             
             return m_UDPClient.Ip;
+        }
+
+        public void Close()
+        {
+            GameModel.PlayerList.Clear();
+            m_UDPClient.Close();
         }
     }
 }

@@ -19,5 +19,11 @@ namespace Net.Actions
         public static Action<SyncTransformMsg> SyncTransformHandle;//1006
 
         public static Action<SyncAnimatorMsg> SyncAnimatorHandle;//1007
+
+        public static Action<string> DieHandle;//1008
+
+        public static Action<string> WinHandle;//1009
+
+        public static Action<int> BombHandle;//1010;
     }
 }

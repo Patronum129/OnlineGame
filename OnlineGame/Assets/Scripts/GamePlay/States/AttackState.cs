@@ -31,7 +31,7 @@ namespace GamePlay.States
                 {
                     if (item.MyName != GameModel.MyName)
                     {
-                        
+                        item.Die();
                     }
                 }
             }

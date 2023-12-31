@@ -94,10 +94,14 @@ namespace Helper
                             SyncAnimatorMsgHandle(body);
                             return;
                         case 1008:
+                            DieMsgHandle(body);
                             return;
                         case 1009:
+                            WinMsgHandle(body);
                             return;
-                        
+                        case 1010:
+                            BombMsgHandle(body);
+                            return;
                     }
                 }
             }
@@ -235,8 +239,8 @@ namespace Helper
         private void SyncAnimatorMsgHandle(byte[] obj)
         {
             var str = Encoding.UTF8.GetString(obj);
-            
-            SyncAnimatorMsg msg = JsonHelper.ToObject<SyncAnimatorMsg>(str);
+
+            var msg = JsonHelper.ToObject<SyncAnimatorMsg>(str);
             
             NetActions.SyncAnimatorHandle?.Invoke(msg);
 
@@ -248,6 +252,63 @@ namespace Helper
 
         #endregion
         
+        #region DieMsg
+        
+        public void SendDieMsg(string str, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            Send(1008,str,isServer,isRpc,ipEndPoint);
+        }
+        
+        private void DieMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+
+            NetActions.DieHandle?.Invoke(str);
+
+            if (GameModel.IsServer)
+            {
+                SendDieMsg(str, true);
+            }
+        }
+
+        #endregion
+        
+        #region WinMsg
+        
+        public void SendWinMsg(string str, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            Send(1009,str,isServer,isRpc,ipEndPoint);
+        }
+        
+        private void WinMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+            
+            NetActions.WinHandle?.Invoke(str);
+        }
+
+        #endregion
+        
+        #region BombMsg
+        
+        public void SendBombMsg(int id, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            var str = id.ToString();
+            Send(1010,str,isServer,isRpc,ipEndPoint);
+        }
+        
+        private void BombMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+
+            int id = Int32.Parse(str);
+            
+            Debug.Log(id);
+            
+            NetActions.BombHandle?.Invoke(id);
+        }
+
+        #endregion
         private void Send(int id, string str, bool isServer, bool isRpc, IPEndPoint ipEndPoint)
         {
             //转换成byte[]
