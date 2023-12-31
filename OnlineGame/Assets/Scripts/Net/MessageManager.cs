@@ -35,7 +35,7 @@ namespace Helper
         
         private void Handle()
         {
-            //包体大小（4） 协议ID（4） 包体（byte[])
+            //Package Size (4), Protocol ID (4), Package Body (byte[])
             if(msgLength >= 8)
             {
                 byte[] _size=new byte[msgLength];
@@ -44,17 +44,17 @@ namespace Helper
 
                 int size = BitConverter.ToInt32(_size, 0);
 
-                //本次要拿的长度
+                //Length to Retrieve This Time
                 var _length = 8 + size;
 
                 if(msgLength >= _length)
                 {
-                    //拿出ID
+                    //Extract the ID
                     byte[] _id = new byte[4];
                     Array.Copy(data,4, _id, 0, 4);
                     int id = BitConverter.ToInt32 (_id, 0);
 
-                    //包体
+                    //Package Body
                     byte[] body = new byte[size];
 
                     Array.Copy(data,8,body, 0, size);
@@ -68,7 +68,7 @@ namespace Helper
                     }
 
                     msgLength -= _length;
-                    Debug.Log($"收到请求：{id}");
+                    Debug.Log($"Received Request：{id}");
 
                     switch(id)
                     {
@@ -351,10 +351,10 @@ namespace Helper
         
         private void Send(int id, string str, bool isServer, bool isRpc, IPEndPoint ipEndPoint)
         {
-            //转换成byte[]
+            //Convert to byte[]
             var body = Encoding.UTF8.GetBytes(str);
 
-            //包体大小 4 消息ID 4 包体内容
+            //Package Body Size 4, Message ID 4, Package Body Content
             byte[] send_buff = new byte[body.Length + 8];
 
             int size = body.Length;

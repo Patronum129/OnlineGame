@@ -13,10 +13,10 @@ namespace GamePlay
 {
     public class GameManager : BaseSingleton<GameManager>
     {
-        [SerializeField,Tooltip("开始的坐标")]
+        [SerializeField,Tooltip("Start Position")]
         private Transform[] m_StartPos;
 
-        [SerializeField,Tooltip("玩家预制体")]
+        [SerializeField,Tooltip("Player Prefab")]
         private GameObject[] m_PlayerGo;
 
         [SerializeField]
@@ -111,7 +111,7 @@ namespace GamePlay
         {
             List<int> indexs = new List<int>();
 
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < 20; i++)
             {
                 int range = Random.Range(0, m_BombPos.Count);
 

@@ -17,15 +17,15 @@ namespace Server
         private HashSet<IPEndPoint> m_Clients;
 
         /// <summary>
-        /// 启动
+        /// Start
         /// </summary>
         public void Start()
         {
             try
             {
                 m_Clients = new HashSet<IPEndPoint>();
-                
-                //创建监听器
+
+                //Create Listener
                 m_UdpListener = new UdpClient(m_Port);
 
                 Debug.Log("UDP Server Start!" + ":" + m_Port);
@@ -39,7 +39,7 @@ namespace Server
         }
 
         /// <summary>
-        /// 监听
+        /// Listen
         /// </summary>
         public async void Accept()
         {
@@ -52,7 +52,7 @@ namespace Server
                 if (!m_Clients.Contains(client))
                 {
                     m_Clients.Add(client);
-                    Debug.Log("客户端已连接：" + client);
+                    Debug.Log("Client Connected：" + client);
                 }
 
                 MessageManager.Singleton.CopyToData(result.Buffer,result.Buffer.Length);
@@ -73,12 +73,12 @@ namespace Server
                 
                 Debug.Log($"Accept: {e.Message}");
                 
-                m_UdpListener.Close();//停止监听客户端的连接
+                m_UdpListener.Close();//Stop Listening for Client Connections
             }
         }
 
         /// <summary>
-        /// 发送到指定客户端
+        /// Send to Specific Client
         /// </summary>
         public async void SendTarget(byte[] data, IPEndPoint remote)
         {
@@ -86,7 +86,7 @@ namespace Server
         }
 
         /// <summary>
-        /// 广播给所有客户端
+        /// Broadcast to All Clients
         /// </summary>
         public async void SendRpc(byte[] data)
         {
@@ -104,7 +104,7 @@ namespace Server
 
         public void Close()
         {
-            m_UdpListener.Close();//停止监听客户端的连接
+            m_UdpListener.Close();//Stop Listening to Client Connections
             m_Clients.Clear();
         }
     }
