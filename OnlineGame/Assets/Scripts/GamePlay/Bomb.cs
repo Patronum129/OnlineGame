@@ -1,3 +1,4 @@
+using System;
 using Helper;
 using Model;
 using Net.Actions;
@@ -11,56 +12,37 @@ namespace GamePlay
         
         private bool m_IsDestory;
 
+        private bool m_IsBoom;
+        private float timer;
+        
         private void Start()
         {
-            NetActions.BombHandle += Handel;
+            GetComponent<Animator>().SetTrigger("Bomb");
+                
+            GameObject.Destroy(transform.gameObject,2.3f);
         }
 
-        private void OnTriggerEnter2D(Collider2D col)
+        private void Update()
         {
-            if(m_IsDestory) return;
+            if (!GameModel.IsServer) return;
             
-            var entity = col.GetComponent<Entity>();
-            
-            if (entity != null)
+            if (!m_IsBoom)
             {
-                if (!entity.IsLocalPlayer) return;
-                
-                m_IsDestory = true;
+                timer += Time.deltaTime;
 
-                SendDie();
-                
-                entity.Die();
-            }
-        }
-
-        private void SendDie()
-        {
-            if (GameModel.IsServer)
-            {
-                GetComponent<Animator>().SetTrigger("Bomb");
-                
-                GameObject.Destroy(transform.gameObject,1f);
-
-                MessageManager.Singleton.SendBombMsg(ID, true);
-            }
-            else
-            {
-                MessageManager.Singleton.SendBombMsg(ID);
-            }
-        }
-
-        private void Handel(int _id)
-        {
-            if (ID == _id)
-            {
-                GetComponent<Animator>().SetTrigger("Bomb");
-                
-                GameObject.Destroy(transform.gameObject,1f);
-
-                if (GameModel.IsServer)
+                if (timer > 1.3f)
                 {
-                    MessageManager.Singleton.SendBombMsg(ID, true);
+                    m_IsBoom = true;
+
+                    var rays = Physics2D.CircleCastAll(this.transform.position, 1.4f, Vector2.zero);
+
+                    foreach (var item in rays)
+                    {
+                        if (item.transform.GetComponent<Entity>())
+                        {
+                            item.transform.GetComponent<Entity>().Die();
+                        }
+                    }
                 }
             }
         }

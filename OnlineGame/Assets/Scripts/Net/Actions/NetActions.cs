@@ -25,5 +25,7 @@ namespace Net.Actions
         public static Action<string> WinHandle;//1009
 
         public static Action<int> BombHandle;//1010;
+
+        public static Action<List<int>> CreateBombHandle;//1011
     }
 }

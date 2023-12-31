@@ -19,7 +19,7 @@ namespace GamePlay.States
             }
             else
             {
-                m_Entity.SetSpeed(3);
+                m_Entity.SetSpeed(5);
             }
         }
     }

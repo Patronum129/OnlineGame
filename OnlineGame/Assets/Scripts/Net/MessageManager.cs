@@ -102,6 +102,9 @@ namespace Helper
                         case 1010:
                             BombMsgHandle(body);
                             return;
+                        case 1011:
+                            CreateBombMsgHandle(body);
+                            return;
                     }
                 }
             }
@@ -309,6 +312,26 @@ namespace Helper
         }
 
         #endregion
+        
+        #region CreateBombMsg
+        
+        public void SendBombMsg(List<int> list, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            var str = JsonHelper.ToJson(list);
+            Send(1011,str,isServer,isRpc,ipEndPoint);
+        }
+        
+        private void CreateBombMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+
+            List<int> list = JsonHelper.ToObject<List<int>>(str);
+            
+            NetActions.CreateBombHandle?.Invoke(list);
+        }
+
+        #endregion
+        
         private void Send(int id, string str, bool isServer, bool isRpc, IPEndPoint ipEndPoint)
         {
             //转换成byte[]
