@@ -26,6 +26,8 @@ namespace Net.NetComponents
         {
             if (!m_IsInit || !m_Entity.IsLocalPlayer) return;
 
+            if (m_Entity.IsDie) return;
+            
             switch (_name)
             {
                 case "Idle":
@@ -60,6 +62,8 @@ namespace Net.NetComponents
         
         private void Handle(SyncAnimatorMsg syncAnimatorMsg)
         {
+            if (m_Entity.IsDie) return;
+            
             if (syncAnimatorMsg.playerName == m_Entity.MyName)
             {
                 if (syncAnimatorMsg.playerName != GameModel.MyName)

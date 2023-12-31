@@ -16,7 +16,14 @@ namespace UI
 
         public void Init(string _name)
         {
-            m_Title.text = $"Player:{_name} Win!";
+            if (_name == "A tie")
+            {
+                m_Title.text = "A Tie!";
+            }
+            else
+            {
+                m_Title.text = $"Player:{_name} Win!";
+            }
             
             if (GameModel.IsServer)
             {

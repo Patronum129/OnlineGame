@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Helper;
 using Model;
@@ -26,7 +27,7 @@ namespace GamePlay
 
         private NetAnimator m_NetAnimator;
 
-        private bool m_IsDie;
+        public bool IsDie;
         
         private void Awake()
         {
@@ -54,7 +55,7 @@ namespace GamePlay
 
         private void Update()
         {
-            if (!IsLocalPlayer) return;
+            if (!IsLocalPlayer || IsDie) return;
 
             var tempDir = Vector2.zero;
             
@@ -146,15 +147,24 @@ namespace GamePlay
         {
             if (_name == MyName)
             {
-                if (m_IsDie) return;
+                if (IsDie) return;
 
-                m_IsDie = true;
+                IsDie = true;
                 
                 GameManager.Singleton.DieSum++;
                 
                 GameManager.Singleton.CheckWin();
 
-                Destroy(this.gameObject);
+                StartCoroutine(SetScale());
+            }
+        }
+
+        private IEnumerator SetScale()
+        {
+            for(int i=0;i<500;i++)
+            {
+                this.transform.localScale = Vector3.zero;
+                yield return null;
             }
         }
     }

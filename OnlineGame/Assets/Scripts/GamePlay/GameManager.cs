@@ -65,6 +65,13 @@ namespace GamePlay
         {
             if (!GameModel.IsServer) return;
 
+            StartCoroutine(DelayCheckWin());
+        }
+
+        private IEnumerator DelayCheckWin()
+        {
+            yield return new WaitForSeconds(0.1f);
+            
             if (GameModel.PlayerList.Count - 1 == DieSum)
             {
                 var entity = FindObjectOfType<Entity>();
@@ -74,8 +81,18 @@ namespace GamePlay
                 
                 ShowWinPanel(entity.MyName);
             }
+            
+            if (GameModel.PlayerList.Count == DieSum)
+            {
+                var entity = FindObjectOfType<Entity>();
+                
+                //RPC
+                MessageManager.Singleton.SendWinMsg("A tie",true);
+                
+                ShowWinPanel("A tie");
+            }
         }
-
+        
         private void ShowWinPanel(string _name)
         {
             StartCoroutine(DelayWin(_name));

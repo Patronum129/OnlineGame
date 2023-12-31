@@ -30,7 +30,7 @@ namespace GamePlay
             {
                 timer += Time.deltaTime;
 
-                if (timer > 1.3f)
+                if (timer > 1.5f)
                 {
                     m_IsBoom = true;
 

@@ -25,6 +25,8 @@ namespace Net.NetComponents
         {
             if (!m_IsInit || !m_Entity.IsLocalPlayer) return;
 
+            if (m_Entity.IsDie) return;
+            
             SyncTransform();
         }
 
