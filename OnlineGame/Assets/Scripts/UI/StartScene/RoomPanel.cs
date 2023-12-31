@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using Client;
@@ -8,6 +9,7 @@ using Net.Datas;
 using TMPro;
 using UnityEditor.Search;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Utilitys;
 
@@ -23,6 +25,8 @@ namespace UI.StartScene
         [SerializeField] private TMP_InputField m_InputMsg;
 
         [SerializeField] private Transform PlayerListParent;
+
+        [SerializeField] private Button m_StartBtn;
         
         private GameObject m_MsgGo;
         private GameObject m_PlayerUI;
@@ -37,13 +41,17 @@ namespace UI.StartScene
             m_PlayerUI = Resources.Load<GameObject>("Prefabs/RoomPlayerUI");
 
             m_PlayerUIList = new List<RoomPlayerUI>();
+
+            m_StartBtn.interactable = false;
             
+            m_StartBtn.onClick.AddListener(SendStartGameMsg);
             m_SendBtn.onClick.AddListener(SendMsg);
             
             NetActions.ChatHandle += AddMsg;
             NetActions.ReadyHandle += Ready;
             NetActions.RoomPlayerUIHandle += HandleJoinLobby;
             NetActions.JoinHandle += ServerJoin;
+            NetActions.StartGameHandle += StartGame;
         }
 
         private void OnEnable()
@@ -51,6 +59,11 @@ namespace UI.StartScene
             ShowIpTitel();
 
             SendJoinLobby();
+
+            if (GameModel.IsServer)
+            {
+                m_StartBtn.interactable = true;
+            }
         }
 
         private void ShowIpTitel()
@@ -153,6 +166,31 @@ namespace UI.StartScene
                     return;
                 }
             }
+        }
+
+        private void SendStartGameMsg()
+        {
+            int sum = 0;
+            
+            foreach (var item in m_PlayerUIList)
+            {
+                if (item.GetReadyState())
+                {
+                    sum++;
+                }
+            }
+
+            if (sum == m_PlayerUIList.Count)
+            {
+                MessageManager.Singleton.SendStartGameRpcMsg();
+            }
+            
+            SceneManager.LoadScene(1);
+        }
+        
+        private void StartGame()
+        {
+            SceneManager.LoadScene(1);
         }
     }
 }

@@ -13,5 +13,7 @@ namespace Net.Actions
         public static Action<string> JoinHandle;//1003
         
         public static Action<List<string>> RoomPlayerUIHandle;//1004
+
+        public static Action StartGameHandle;//1005
     }
 }

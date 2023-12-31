@@ -84,6 +84,9 @@ namespace Helper
                         case 1004:
                             JoinRpcMsgHandle(body);
                             return;
+                        case 1005:
+                            StartGameMsgHandle();
+                            return;
                         
                     }
                 }
@@ -176,6 +179,21 @@ namespace Helper
             NetActions.RoomPlayerUIHandle?.Invoke(names);
         }
         #endregion
+
+        #region StartGameMsg
+
+        public void SendStartGameRpcMsg()
+        {
+            Send(1005,"StartGame",true,true,null);
+        }
+        
+        private void StartGameMsgHandle()
+        {
+            NetActions.StartGameHandle?.Invoke();
+        }
+
+        #endregion
+        
         
         private void Send(int id, string str, bool isServer, bool isRpc, IPEndPoint ipEndPoint)
         {

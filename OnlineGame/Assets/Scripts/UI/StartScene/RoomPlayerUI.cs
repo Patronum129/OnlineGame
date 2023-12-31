@@ -49,10 +49,15 @@ namespace UI.StartScene
         {
             m_ReadyBtn.interactable = false;
 
-            if (!m_NameText.text.Contains("(Ready)"))
+            if (!GetReadyState())
             {
                 m_NameText.text += "(Ready)";
             }
+        }
+
+        public bool GetReadyState()
+        {
+            return m_NameText.text.Contains("(Ready)");
         }
     }
 }
