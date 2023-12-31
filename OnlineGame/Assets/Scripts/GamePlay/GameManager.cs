@@ -22,7 +22,7 @@ namespace GamePlay
         {
             for (int i = 0; i < GameModel.PlayerList.Count; i++)
             {
-                var go = GameObject.Instantiate(m_PlayerGo[i],m_StartPos[i]);
+                var go = GameObject.Instantiate(m_PlayerGo[i],m_StartPos[i].position,Quaternion.identity);
                 
                 go.GetComponent<Entity>().Init(i);
             }

@@ -183,9 +183,9 @@ namespace UI.StartScene
             if (sum == m_PlayerUIList.Count)
             {
                 MessageManager.Singleton.SendStartGameRpcMsg();
+                
+                StartGame();
             }
-
-            StartGame();
         }
         
         private void StartGame()

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CardGame.StateMachine
+namespace GamePlay.States
 {
     public class StateMachine : MonoBehaviour
     {
@@ -8,7 +8,13 @@ namespace CardGame.StateMachine
 
         public State CurrentState { get; private set; }
         private State nextState;
-
+        
+        private void Awake()
+        {
+            mainStateType = new IdleState();
+            SetNextStateToMain();
+        }
+        
         // Update is called once per frame
         void Update()
         {
@@ -56,11 +62,6 @@ namespace CardGame.StateMachine
         public void SetNextStateToMain()
         {
             nextState = mainStateType;
-        }
-
-        private void Awake()
-        {
-            SetNextStateToMain();
         }
     }
 }

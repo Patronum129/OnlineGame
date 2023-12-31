@@ -1,13 +1,13 @@
 using UnityEngine;
 
-namespace CardGame.StateMachine
+namespace GamePlay.States
 {
     public abstract class State
     {
-        public int ID;
-        
-        public int sum;
+        protected Entity m_Entity;
 
+        protected int stateID;
+        
         protected float time { get; set; }
         protected float fixedtime { get; set; }
         protected float latetime { get; set; }
@@ -17,13 +17,21 @@ namespace CardGame.StateMachine
         public virtual void OnEnter(StateMachine _stateMachine)
         {
             stateMachine = _stateMachine;
-            sum = 0;
+
+            m_Entity = GetComponent<Entity>();
         }
     
     
         public virtual void OnUpdate()
         {
             time += Time.deltaTime;
+
+            if (!m_Entity.IsLocalPlayer) return;
+                
+            if (Input.GetMouseButtonDown(0) && stateID != 1)
+            {
+                stateMachine.SetNextState(new AttackState());
+            }
         }
     
         public virtual void OnFixedUpdate()
