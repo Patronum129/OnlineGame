@@ -184,12 +184,19 @@ namespace UI.StartScene
             {
                 MessageManager.Singleton.SendStartGameRpcMsg();
             }
-            
-            SceneManager.LoadScene(1);
+
+            StartGame();
         }
         
         private void StartGame()
         {
+            GameModel.PlayerList = new List<string>();
+
+            foreach (var item in m_PlayerUIList)
+            {
+                GameModel.PlayerList.Add(item.MyName);
+            }
+            
             SceneManager.LoadScene(1);
         }
     }

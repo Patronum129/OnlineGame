@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Model
 {
     public static class GameModel
@@ -5,5 +7,7 @@ namespace Model
         public static string MyName;
 
         public static bool IsServer;
+
+        public static List<string> PlayerList;
     }
 }
