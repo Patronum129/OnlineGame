@@ -40,6 +40,7 @@ namespace GamePlay
             m_WeaponCollider = transform.Find("weapon_sword_side").GetComponent<BoxCollider2D>();
 
             NetActions.DieHandle += DieHandle;
+            NetActions.ExitGameHandle += ExitGameHandle;
         }
 
         public void Init(int i)
@@ -166,6 +167,11 @@ namespace GamePlay
                 this.transform.localScale = Vector3.zero;
                 yield return null;
             }
+        }
+
+        private void ExitGameHandle()
+        {
+            GameManager.Singleton.ShowWinPanel("Game Over");
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
+using GamePlay;
 using Helper;
 using UnityEngine;
 
@@ -60,7 +61,17 @@ namespace Server
             }
             catch(Exception e)
             {
-                Debug.LogError($"Accept: {e.Message}");
+                try
+                {
+                    GameManager.Singleton.ShowWinPanel("Game Over");
+                    MessageManager.Singleton.ExitGameMsgRpcMsg(true);
+                }
+                catch (Exception exception)
+                {
+                   
+                }
+                
+                Debug.Log($"Accept: {e.Message}");
                 
                 m_UdpListener.Close();//停止监听客户端的连接
             }
@@ -81,6 +92,12 @@ namespace Server
         {
             foreach (var client in m_Clients)
             {
+                if (client == null)
+                {
+                    GameManager.Singleton.ShowWinPanel("Game Over");
+                    MessageManager.Singleton.ExitGameMsgRpcMsg(true);
+                }
+                
                 await m_UdpListener.SendAsync(data, data.Length, client);
             }
         }

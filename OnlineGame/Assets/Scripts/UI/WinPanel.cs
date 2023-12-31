@@ -14,11 +14,20 @@ namespace UI
         [SerializeField] private Button m_ReturnBtn;
         [SerializeField] private TMP_Text m_Title;
 
+        private bool isInit;
+        
         public void Init(string _name)
         {
+            if (isInit) return;
+            isInit = true;
+            
             if (_name == "A tie")
             {
                 m_Title.text = "A Tie!";
+            }
+            else if (_name == "Game Over")
+            {
+                m_Title.text = "Game Over!";
             }
             else
             {

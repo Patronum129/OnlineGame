@@ -2,6 +2,7 @@ using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using GamePlay;
 using Helper;
 using UnityEngine;
 
@@ -57,8 +58,16 @@ namespace Client
             }
             catch (Exception e)
             {
-                Debug.LogError($"Send error:{e.Message}");
-                
+                Debug.Log($"Send error:{e.Message}");
+
+                try
+                {
+                    GameManager.Singleton.ShowWinPanel("Game Over");
+                }
+                catch (Exception ex)
+                {
+                    Debug.Log($"Send error:{ex.Message}");
+                }
                 m_UDPClient.Close();
             }
         }

@@ -93,14 +93,14 @@ namespace GamePlay
             }
         }
         
-        private void ShowWinPanel(string _name)
+        public void ShowWinPanel(string _name)
         {
             StartCoroutine(DelayWin(_name));
         }
 
         private IEnumerator DelayWin(string _name)
         {
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1.5f);
             
             WinPanel.SetActive(true);
             
@@ -111,7 +111,7 @@ namespace GamePlay
         {
             List<int> indexs = new List<int>();
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 16; i++)
             {
                 int range = Random.Range(0, m_BombPos.Count);
 

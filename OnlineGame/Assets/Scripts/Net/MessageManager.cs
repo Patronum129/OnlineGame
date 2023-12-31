@@ -105,6 +105,9 @@ namespace Helper
                         case 1011:
                             CreateBombMsgHandle(body);
                             return;
+                        case 1012:
+                            ExitGameMsgHandle();
+                            return;
                     }
                 }
             }
@@ -328,6 +331,20 @@ namespace Helper
             List<int> list = JsonHelper.ToObject<List<int>>(str);
             
             NetActions.CreateBombHandle?.Invoke(list);
+        }
+
+        #endregion
+        
+        #region ExitGameMsg
+
+        public void ExitGameMsgRpcMsg(bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            Send(1012,"ExitGame",isServer,isRpc,ipEndPoint);
+        }
+        
+        private void ExitGameMsgHandle()
+        {
+            NetActions.ExitGameHandle?.Invoke();
         }
 
         #endregion

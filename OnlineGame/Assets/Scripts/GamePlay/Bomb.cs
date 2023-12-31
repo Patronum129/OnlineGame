@@ -34,7 +34,7 @@ namespace GamePlay
                 {
                     m_IsBoom = true;
 
-                    var rays = Physics2D.CircleCastAll(this.transform.position, 1.4f, Vector2.zero);
+                    var rays = Physics2D.CircleCastAll(this.transform.position, 3f, Vector2.zero);
 
                     foreach (var item in rays)
                     {
