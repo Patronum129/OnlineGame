@@ -21,6 +21,8 @@ namespace GamePlay
         private BoxCollider2D m_WeaponCollider;
         
         [HideInInspector] public Vector2 Dir;
+
+        private NetAnimator m_NetAnimator;
         
         private void Awake()
         {
@@ -40,6 +42,7 @@ namespace GamePlay
             IsLocalPlayer = MyName == GameModel.MyName;
             
             GetComponent<NetTransform>().Init();
+            GetComponent<NetAnimator>().Init();
         }
 
         private void Update()
@@ -90,6 +93,8 @@ namespace GamePlay
                 m_WeaponAnimator.SetTrigger(_name);
                 m_SwordAnimator.SetTrigger(_name);
             }
+
+            m_NetAnimator.SyncAnimator(_name);
         }
 
         public void SetSpeed(int speed)

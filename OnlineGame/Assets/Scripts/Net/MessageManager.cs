@@ -91,6 +91,7 @@ namespace Helper
                             SyncTransformMsgHandle(body);
                             return;
                         case 1007:
+                            SyncAnimatorMsgHandle(body);
                             return;
                         case 1008:
                             return;
@@ -217,6 +218,31 @@ namespace Helper
             if (GameModel.IsServer)
             {
                 SendSyncTransformMsg(msg, true);
+            }
+        }
+
+        #endregion
+        
+        #region SyncAnimator
+        
+        public void SendSyncAnimatorMsg(SyncAnimatorMsg syncAnimatorMsg, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            var str = JsonHelper.ToJson(syncAnimatorMsg);
+            
+            Send(1007,str,isServer,isRpc,ipEndPoint);
+        }
+        
+        private void SyncAnimatorMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+            
+            SyncAnimatorMsg msg = JsonHelper.ToObject<SyncAnimatorMsg>(str);
+            
+            NetActions.SyncAnimatorHandle?.Invoke(msg);
+
+            if (GameModel.IsServer)
+            {
+                SendSyncAnimatorMsg(msg, true);
             }
         }
 
