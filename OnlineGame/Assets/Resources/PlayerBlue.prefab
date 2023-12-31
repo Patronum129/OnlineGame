@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 6597421435136994304}
   - component: {fileID: -6545473930705421778}
   - component: {fileID: -9000247971740709402}
+  - component: {fileID: 7155684777905401095}
   m_Layer: 0
   m_Name: PlayerBlue
   m_TagString: Untagged
@@ -290,7 +291,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &-6545473930705421778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyName: 
+  IsLocalPlayer: 0
   Dir: {x: 0, y: 0}
 --- !u!114 &-9000247971740709402
 MonoBehaviour:
@@ -315,6 +317,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5093d79edcf16fd40bd50fea873ffba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7155684777905401095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6933467891129263423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33461a70c82e8547895141514c3c96b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7448706491559330462

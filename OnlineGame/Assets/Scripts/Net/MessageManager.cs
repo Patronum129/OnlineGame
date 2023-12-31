@@ -87,6 +87,15 @@ namespace Helper
                         case 1005:
                             StartGameMsgHandle();
                             return;
+                        case 1006:
+                            SyncTransformMsgHandle(body);
+                            return;
+                        case 1007:
+                            return;
+                        case 1008:
+                            return;
+                        case 1009:
+                            return;
                         
                     }
                 }
@@ -94,10 +103,7 @@ namespace Helper
         }
 
         #region ChatMsg
-
-        /// <summary>
-        /// 发送聊天信息给服务器
-        /// </summary>
+        
         public void SendChatMsg(string name, string chat, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
         {
             ChatMsg msg = new ChatMsg();
@@ -110,9 +116,6 @@ namespace Helper
             Send(1001,str,isServer,isRpc,ipEndPoint);
         }
         
-        /// <summary>
-        /// 处理聊天转发请求
-        /// </summary>
         private void ChatMsgHandle(byte[] obj)
         {
             var str = Encoding.UTF8.GetString(obj);
@@ -194,6 +197,30 @@ namespace Helper
 
         #endregion
         
+        #region SyncTransform
+        
+        public void SendSyncTransformMsg(SyncTransformMsg syncTransformMsg, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            var str = JsonHelper.ToJson(syncTransformMsg);
+            
+            Send(1006,str,isServer,isRpc,ipEndPoint);
+        }
+        
+        private void SyncTransformMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+            
+            SyncTransformMsg msg = JsonHelper.ToObject<SyncTransformMsg>(str);
+            
+            NetActions.SyncTransformHandle?.Invoke(msg);
+
+            if (GameModel.IsServer)
+            {
+                SendSyncTransformMsg(msg, true);
+            }
+        }
+
+        #endregion
         
         private void Send(int id, string str, bool isServer, bool isRpc, IPEndPoint ipEndPoint)
         {

@@ -1,6 +1,8 @@
-namespace NewName
+using UnityEngine;
+
+namespace GamePlay
 {
-    public class Bomb
+    public class Bomb : MonoBehaviour
     {
 
     }

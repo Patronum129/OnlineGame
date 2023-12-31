@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Model;
+using Net.NetComponents;
 using UnityEngine;
 
 namespace GamePlay
@@ -37,6 +38,8 @@ namespace GamePlay
             MyName = GameModel.PlayerList[i];
 
             IsLocalPlayer = MyName == GameModel.MyName;
+            
+            GetComponent<NetTransform>().Init();
         }
 
         private void Update()

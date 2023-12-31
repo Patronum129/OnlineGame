@@ -15,5 +15,9 @@ namespace Net.Actions
         public static Action<List<string>> RoomPlayerUIHandle;//1004
 
         public static Action StartGameHandle;//1005
+
+        public static Action<SyncTransformMsg> SyncTransformHandle;//1006
+
+        public static Action<SyncAnimatorMsg> SyncAnimatorHandle;//1007
     }
 }
