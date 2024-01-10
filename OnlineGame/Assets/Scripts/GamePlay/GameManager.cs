@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Helper;
@@ -109,7 +108,7 @@ namespace GamePlay
 
         private void CreateAllBomb()
         {
-            List<int> indexs = new List<int>();
+            List<int> indexs = new List<int>(20);
 
             for (int i = 0; i < 20; i++)
             {
@@ -139,6 +138,12 @@ namespace GamePlay
 
                 sum++;
             }
+        }
+
+        public void OnDestroy()
+        {
+            NetActions.WinHandle -= ShowWinPanel;
+            NetActions.CreateBombHandle -= CreateBombHandle;
         }
     }
 }

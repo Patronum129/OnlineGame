@@ -6,6 +6,7 @@ using Client;
 using Model;
 using Net.Actions;
 using Net.Datas;
+using Newtonsoft.Json;
 using Server;
 using UnityEngine;
 using Utilitys;
@@ -14,7 +15,7 @@ namespace Helper
 {
     public class MessageManager : BaseSingleton<MessageManager>
     {
-        private byte[] data = new byte[4096];
+        private byte[] data = new byte[512];
 
         private int msgLength = 0;
 
@@ -68,7 +69,6 @@ namespace Helper
                     }
 
                     msgLength -= _length;
-                    Debug.Log($"Received Request：{id}");
 
                     switch(id)
                     {
@@ -378,7 +378,11 @@ namespace Helper
             }
             else
             {
-                ClientManager.Singleton.Send(send_buff);
+                try
+                {
+                    ClientManager.Singleton.Send(send_buff);
+                }
+                catch{}
             }
         }
     }

@@ -1,3 +1,4 @@
+using System;
 using GamePlay;
 using Helper;
 using Model;
@@ -82,6 +83,11 @@ namespace Net.NetComponents
                     }
                 }
             }
+        }
+
+        private void OnDestroy()
+        {
+            NetActions.SyncAnimatorHandle -= Handle;
         }
     }
 }

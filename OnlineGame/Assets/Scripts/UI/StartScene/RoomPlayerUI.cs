@@ -1,3 +1,4 @@
+using System;
 using Helper;
 using Model;
 using TMPro;
@@ -58,6 +59,13 @@ namespace UI.StartScene
         public bool GetReadyState()
         {
             return m_NameText.text.Contains("(Ready)");
+        }
+
+        public void SetNon()
+        {
+            this.transform.SetParent(null);
+            
+            this.transform.position = Vector3.zero;
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using GamePlay;
 using Helper;
 using Model;
@@ -12,6 +13,8 @@ namespace Net.NetComponents
         private bool m_IsInit;
 
         private Entity m_Entity;
+
+        private int index = 0;
         public void Init()
         {
             m_Entity = GetComponent<Entity>();
@@ -26,8 +29,13 @@ namespace Net.NetComponents
             if (!m_IsInit || !m_Entity.IsLocalPlayer) return;
 
             if (m_Entity.IsDie) return;
-            
-            SyncTransform();
+
+            index++;
+
+            if (index % 2 == 1)
+            {
+                SyncTransform();
+            }
         }
 
         private void SyncTransform()
@@ -58,6 +66,11 @@ namespace Net.NetComponents
                     transform.localScale = new Vector3(syncTransformMsg.syncScale.x,syncTransformMsg.syncScale.y,1);
                 }
             }
+        }
+
+        private void OnDestroy()
+        {
+            NetActions.SyncTransformHandle -= Handle;
         }
     }
 }

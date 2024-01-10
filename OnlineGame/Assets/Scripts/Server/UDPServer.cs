@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using GamePlay;
 using Helper;
+using Model;
 using UnityEngine;
 
 namespace Server
@@ -90,7 +91,9 @@ namespace Server
         /// </summary>
         public async void SendRpc(byte[] data)
         {
-            foreach (var client in m_Clients)
+            HashSet<IPEndPoint> tempHash = new HashSet<IPEndPoint>(m_Clients);
+            
+            foreach (var client in tempHash)
             {
                 if (client == null)
                 {
@@ -106,6 +109,8 @@ namespace Server
         {
             m_UdpListener.Close();//Stop Listening to Client Connections
             m_Clients.Clear();
+            
+            m_UdpListener.Dispose();
         }
     }
 }

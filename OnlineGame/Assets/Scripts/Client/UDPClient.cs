@@ -18,6 +18,9 @@ namespace Client
         public void Start()
         {
             m_UDPClient = new UdpClient();
+
+            Debug.Log("UDPClient");
+            
             Receive();
         }
 
@@ -38,14 +41,14 @@ namespace Client
                 }
                 else
                 {
-                    Debug.LogError($"Receive error: 数据为空");
+                    Debug.Log($"Receive error: 数据为空");
                 }
 
                 Receive();
             }
             catch (Exception e)
             {
-                Debug.LogError($"Receive error:{e.Message}");
+                Debug.Log($"Receive error:{e.Message}");
                 m_UDPClient.Close();
             }
         }
@@ -76,6 +79,7 @@ namespace Client
         {
             Ip = "";
             m_UDPClient.Close();
+            m_UDPClient.Dispose();
         }
     }
 }

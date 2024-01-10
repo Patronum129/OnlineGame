@@ -39,6 +39,10 @@ namespace Client
         {
             GameModel.PlayerList.Clear();
             m_UDPClient.Close();
+            GameModel.MyName = "";
+            GameModel.IsServer = false;
+            
+            Destroy(this.gameObject);
         }
     }
 }

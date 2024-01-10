@@ -173,5 +173,11 @@ namespace GamePlay
         {
             GameManager.Singleton.ShowWinPanel("Game Over");
         }
+
+        private void OnDestroy()
+        {
+            NetActions.DieHandle -= DieHandle;
+            NetActions.ExitGameHandle -= ExitGameHandle;
+        }
     }
 }

@@ -115,6 +115,7 @@ namespace UI.StartScene
         {
             foreach (var item in m_PlayerUIList)
             {
+                item.SetNon();
                 GameObject.Destroy(item);
             }
             
@@ -137,17 +138,19 @@ namespace UI.StartScene
             playerUI.Init(name);
         }
 
-        private void ServerJoin(string name)
+        private void ServerJoin(string myName)
         {
-            AddPlayerUI(name);
+            AddPlayerUI(myName);
             
             List<string> names = new List<string>();
 
-            foreach (var item in m_PlayerUIList)
+            var list = PlayerListParent.GetComponentsInChildren<RoomPlayerUI>();
+
+            foreach (var item in list)
             {
                 names.Add(item.MyName);
             }
-
+            
             MessageManager.Singleton.SendJoinRpcMsg(names);
         }
         
@@ -195,6 +198,15 @@ namespace UI.StartScene
             }
             
             SceneManager.LoadScene(1);
+        }
+        
+        private void OnDestroy()
+        {
+            NetActions.ChatHandle -= AddMsg;
+            NetActions.ReadyHandle -= Ready;
+            NetActions.RoomPlayerUIHandle -= HandleJoinLobby;
+            NetActions.JoinHandle -= ServerJoin;
+            NetActions.StartGameHandle -= StartGame;
         }
     }
 }

@@ -38,6 +38,9 @@ namespace Server
         {
             m_UDPServer.Close();
             GameModel.PlayerList.Clear();
+            GameModel.MyName = "";
+            GameModel.IsServer = false;
+            Destroy(this.gameObject);
         }
     }
 }
