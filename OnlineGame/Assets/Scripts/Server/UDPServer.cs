@@ -78,6 +78,11 @@ namespace Server
             }
         }
 
+        public void ClearIP()
+        {
+            m_Clients.Clear();
+        }
+        
         /// <summary>
         /// Send to Specific Client
         /// </summary>

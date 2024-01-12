@@ -33,14 +33,21 @@ namespace Server
         {
             m_UDPServer.SendTarget(buff,ipEndPoint);
         }
-
+        
         public void Close()
         {
             m_UDPServer.Close();
-            GameModel.PlayerList.Clear();
+            
+            if(GameModel.PlayerList!= null) GameModel.PlayerList.Clear();
+            
             GameModel.MyName = "";
             GameModel.IsServer = false;
             Destroy(this.gameObject);
+        }
+
+        public void ClearIp()
+        {
+            m_UDPServer.ClearIP();
         }
     }
 }

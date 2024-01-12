@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Helper;
 using Model;
 using Net.Actions;
@@ -20,8 +21,19 @@ namespace GamePlay
             GetComponent<Animator>().SetTrigger("Bomb");
                 
             GameObject.Destroy(transform.gameObject,2.3f);
+
+            StartCoroutine(BoomMusic());
         }
 
+        private IEnumerator BoomMusic()
+        {
+            yield return new WaitForSeconds(1.5f);
+
+            var clip = GetComponentInChildren<AudioSource>().clip;
+            
+            GetComponentInChildren<AudioSource>().PlayOneShot(clip);
+        }
+        
         private void Update()
         {
             if (!GameModel.IsServer) return;

@@ -29,5 +29,7 @@ namespace Net.Actions
         public static Action<List<int>> CreateBombHandle;//1011
 
         public static Action ExitGameHandle;//1012
+
+        public static Action<string> ExitLobbyHandle;//1013
     }
 }

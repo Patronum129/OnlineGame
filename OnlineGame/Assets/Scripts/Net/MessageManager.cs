@@ -108,6 +108,9 @@ namespace Helper
                         case 1012:
                             ExitGameMsgHandle();
                             return;
+                        case 1013:
+                            ExitLobbyMsgHandle(body);
+                            return;
                     }
                 }
             }
@@ -347,6 +350,22 @@ namespace Helper
             NetActions.ExitGameHandle?.Invoke();
         }
 
+        #endregion
+        
+        #region JoinGameMsg
+        
+        public void SendExitLobbyMsg(string _name, bool isServer = false, bool isRpc = true, IPEndPoint ipEndPoint = null)
+        {
+            Send(1013,_name,isServer,isRpc,ipEndPoint);
+        }
+        
+        private void ExitLobbyMsgHandle(byte[] obj)
+        {
+            var str = Encoding.UTF8.GetString(obj);
+
+            NetActions.ExitLobbyHandle?.Invoke(str);
+        }
+        
         #endregion
         
         private void Send(int id, string str, bool isServer, bool isRpc, IPEndPoint ipEndPoint)

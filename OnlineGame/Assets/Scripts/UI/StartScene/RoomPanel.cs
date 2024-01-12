@@ -1,9 +1,11 @@
+using System.Collections;
 using System.Collections.Generic;
 using Client;
 using Helper;
 using Model;
 using Net.Actions;
 using Net.Datas;
+using Server;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,6 +26,7 @@ namespace UI.StartScene
         [SerializeField] private Transform PlayerListParent;
 
         [SerializeField] private Button m_StartBtn;
+        [SerializeField] private Button m_ExitBtn;
         
         private GameObject m_MsgGo;
         private GameObject m_PlayerUI;
@@ -43,12 +46,14 @@ namespace UI.StartScene
             
             m_StartBtn.onClick.AddListener(SendStartGameMsg);
             m_SendBtn.onClick.AddListener(SendMsg);
+            m_ExitBtn.onClick.AddListener(OnClickExitBtn);
             
             NetActions.ChatHandle += AddMsg;
             NetActions.ReadyHandle += Ready;
             NetActions.RoomPlayerUIHandle += HandleJoinLobby;
             NetActions.JoinHandle += ServerJoin;
             NetActions.StartGameHandle += StartGame;
+            NetActions.ExitLobbyHandle += ExitLobbyHandle;
         }
 
         private void OnEnable()
@@ -207,6 +212,91 @@ namespace UI.StartScene
             NetActions.RoomPlayerUIHandle -= HandleJoinLobby;
             NetActions.JoinHandle -= ServerJoin;
             NetActions.StartGameHandle -= StartGame;
+            NetActions.ExitLobbyHandle -= ExitLobbyHandle;
+        }
+
+        private void OnClickExitBtn()
+        {
+            MessageManager.Singleton.SendExitLobbyMsg(GameModel.MyName,GameModel.IsServer);
+            
+            StartCoroutine(DelayExit());
+        }
+        
+        private void ExitLobbyHandle(string _name)
+        {
+            Debug.Log(_name);
+            
+            if (_name == GameModel.MyName)
+            {
+                if (GameModel.IsServer)
+                {
+                    ServerManager.Singleton.Close();
+                    Destroy(ServerManager.Singleton.gameObject);
+                    StartCoroutine(DelayLoad());
+                }
+                else
+                {
+                    ClientManager.Singleton.Close();
+                    Destroy(ClientManager.Singleton.gameObject);
+                    StartCoroutine(DelayLoad());
+                }
+            }
+            else
+            {
+                if (GameModel.IsServer)
+                {
+                    RoomPlayerUI temp = null;
+                    
+                    foreach (var item in m_PlayerUIList)
+                    {
+                        if (item.MyName == _name)
+                        {
+                            temp = item;
+                        }
+                    }
+                    
+                    temp.SetNon();
+
+                    m_PlayerUIList.Remove(temp);
+                    
+                    
+                    
+                    ServerManager.Singleton.ClearIp();
+                }
+                else
+                {
+                    ClientManager.Singleton.Close();
+                    Destroy(ClientManager.Singleton.gameObject);
+                    StartCoroutine(DelayLoad());
+                }
+            }
+        }
+
+        private IEnumerator DelayLoad()
+        {
+            yield return null;
+            
+            SceneManager.LoadScene(0);
+        }
+
+        private IEnumerator DelayExit()
+        {
+            GetComponent<CanvasGroup>().alpha = 0;
+            
+            yield return new WaitForSeconds(1f);
+
+            if (GameModel.IsServer)
+            {
+                ServerManager.Singleton.Close();
+                Destroy(ServerManager.Singleton.gameObject);
+                StartCoroutine(DelayLoad());
+            }
+            else
+            {
+                ClientManager.Singleton.Close();
+                Destroy(ClientManager.Singleton.gameObject);
+                StartCoroutine(DelayLoad());
+            }
         }
     }
 }

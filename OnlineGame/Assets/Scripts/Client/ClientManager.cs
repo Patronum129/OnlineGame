@@ -37,7 +37,7 @@ namespace Client
 
         public void Close()
         {
-            GameModel.PlayerList.Clear();
+            if(GameModel.PlayerList!= null) GameModel.PlayerList.Clear();
             m_UDPClient.Close();
             GameModel.MyName = "";
             GameModel.IsServer = false;

@@ -1,4 +1,5 @@
 using Client;
+using GamePlay;
 using Model;
 using Server;
 using TMPro;
@@ -20,6 +21,8 @@ namespace UI
         {
             if (isInit) return;
             isInit = true;
+
+            AudioManager.Singleton.PlayEnd();
             
             if (_name == "A tie")
             {
