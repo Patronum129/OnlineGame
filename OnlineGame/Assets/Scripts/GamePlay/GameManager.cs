@@ -110,7 +110,7 @@ namespace GamePlay
         {
             List<int> indexs = new List<int>(20);
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 16; i++)
             {
                 int range = Random.Range(0, m_BombPos.Count);
 
